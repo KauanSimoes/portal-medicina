@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Acadêmico | Medicina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+<div id="mural-global" class="mural-container">
+    <div class="mural-content">
+        <span class="mural-tag">AVISO</span>
+        <p id="mural-text">Bem-vindo ao Portal Acadêmico. Utilize os filtros para organizar suas matérias!</p>
+    </div>
+</div>
+
+<div id="weekly-progress-container">
+<div id="overlay">
+    <div id="confirm-modal">
+        <div class="confirm-title" id="confirm-text">Confirmar ação?</div>
+        <div class="confirm-btn-group" id="confirm-buttons"></div>
+    </div>
+</div>
+
+<div class="container">
+    <header>
+        <div class="header-info">
+            <h1 id="txt-title">Portal de Estudos</h1>
+            <span>C:\Users\simoe\Documents\Faculdade\Livros</span>
+        </div>
+        <div id="date-display" style="color: var(--accent);"></div>
+    </header>
+
+    <div class="lang-selector">
+        <button class="lang-btn" onclick="toggleLang()">🌐</button>
+        <div class="lang-options" id="lang-opts">
+            <div class="lang-opt" onclick="setLang('pt')">🇧🇷 Português</div>
+            <div class="lang-opt" onclick="setLang('es')">🇵🇾 Español</div>
+            <div class="lang-opt" onclick="setLang('en')">🇺🇸 English</div>
+        </div>
+    </div>
+
+    <div id="history-modal">
+        <span style="float:right; cursor:pointer; color:var(--text-dim);" onclick="toggleHistory()" id="txt-close-hist">[FECHAR]</span>
+        <h2 id="txt-hist-title">📜 Registro Acadêmico</h2>
+        <div class="history-grid">
+            <div class="hist-col"><h3 id="txt-hist-delivered">✅ Entregues</h3><div id="hist-delivered"></div></div>
+            <div class="hist-col"><h3 id="txt-hist-expired">❌ Expiradas</h3><div id="hist-expired"></div></div>
+        </div>
+    </div>
+
+    <div class="dashboard-grid">
+        <section class="card">
+            <h2 id="txt-schedule-title">📅 Cronograma de Aula</h2>
+            <table id="schedule-table"></table>
+        </section>
+
+        <div style="display: flex; flex-direction: column; gap: 25px;">
+            <section class="card">
+                <h2 id="txt-lib-title">📚 Biblioteca</h2>
+                <button class="btn-study" style="width:100%" onclick="document.getElementById('file-upload').click()" id="txt-link-pdf">+ Vincular PDF</button>
+                <input type="file" id="file-upload" style="display:none" onchange="addFile(this)">
+                <div id="files-list" style="margin-top:15px"></div>
+                <div id="term-card">
+                    <span id="txt-term-label" style="font-size:0.6rem; text-transform:uppercase; color:var(--text-dim)">Termo Médico do Dia</span>
+                    <span id="term-word">...</span>
+                    <span id="term-desc">...</span>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 id="txt-task-title">⏳ Nova Tarefa</h2>
+                <div class="task-input-grid">
+                    <select id="task-sub" class="modern-input"></select>
+                    <input type="text" id="task-name" class="modern-input" placeholder="...">
+                    <input type="datetime-local" id="task-date" class="modern-input">
+                    <div class="save-row">
+                        <button class="btn-study" style="flex: 1;" onclick="addTask()" id="txt-save-task">Salvar Tarefa</button>
+                        <button class="history-btn-inline" onclick="toggleHistory()" title="Ver Histórico">🕒</button>
+                    </div>
+                </div>
+                <div class="filter-container" id="filter-chips"></div>
+                <div id="tasks-list"></div>
+            </section>
+        </div>
+
+        <section class="card" style="grid-column: 1 / -1; text-align: center;">
+            <h2 id="txt-focus-title">🧠 Foco Profundo</h2>
+            <button class="btn-study" onclick="openStudyTimer()" id="txt-open-timer">Abrir Cronômetro de Sessão</button>
+        </section>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
