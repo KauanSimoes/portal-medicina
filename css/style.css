@@ -109,3 +109,67 @@ td { padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); }
 
 .btn-study { background: none; border: 2px solid var(--accent); color: var(--accent); padding: 12px 30px; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; border-radius: 30px; font-size: 0.8rem; transition: 0.3s; }
 .btn-study:hover { background: var(--accent); color: white; }
+
+/* ATIVAR ROLAGEM E ADICIONAR BARRA PERSONALIZADA */
+
+html, body {
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow-y: auto !important;
+}
+
+.container, .dashboard-grid {
+    height: auto !important;
+    overflow: visible !important;
+}
+
+/* Estilo da Barra (Cobre Minimalista) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-deep);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 10px;
+}
+/* DESTRAVAR OS CONTEÚDOS PARA ELES SUBIREM NA ROLAGEM */
+
+/* AJUSTES PARA CELULAR (Telas menores que 768px) */
+@media (max-width: 768px) {
+    
+    /* 1. Transforma as duas colunas em uma só */
+    .dashboard-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    /* 2. Ajusta o espaçamento do topo para o título não sumir */
+    body {
+        padding: 20px 10px !important;
+    }
+
+    /* 3. Ajusta o Header (Título e Data) para caber na tela */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem !important;
+    }
+
+    /* 4. Faz os cards ocuparem a largura total */
+    .container {
+        padding: 0 10px;
+    }
+
+    /* 5. Ajusta o Mural de Avisos para não tampar tudo */
+    .mural-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
