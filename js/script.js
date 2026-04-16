@@ -1,21 +1,36 @@
 const translations = {
-    pt: { mural: "Bem-vindo ao Portal Acadêmico. Utilize os filtros para organizar suas matérias!",
-          all: "Todas", title: "Portal de Estudos", closeHist: "[FECHAR]", histTitle: "📜 Registro Acadêmico", delivered: "✅ Entregues", expired: "❌ Expiradas", scheduleTitle: "📅 Cronograma de Aula", libTitle: "📚 Biblioteca", linkPdf: "+ Vincular PDF", taskTitle: "⏳ Nova Tarefa", saveTask: "Salvar", focusTitle: "🧠 Foco Profundo", openTimer: "Abrir Cronômetro", confirmDone: "Confirmar entrega?", confirmDel: "Realmente excluir?", yes: "Sim", no: "Não", remaining: "Restante", expiredTxt: "EXPIRADO", placeholderTask: "Título da tarefa...", termLabel: "Termo Médico do Dia", days: ["Segunda", "Terça", "Quarta", "Quinta", "Sexta"], subjects: ["Anatomia", "Metodologia", "Histologia", "Comunicação", "Biologia", "Sem aula"],
-          terms: [{w: "Homeostase", d: "Equilíbrio estável das funções do organismo."}, {w: "Iatrogenia", d: "Estado de doença causado por tratamento médico."}, {w: "Anamnese", d: "Histórico detalhado do paciente coletado na consulta."}] },
-    es: { mural: "¡Bienvenido al Portal Académico! ¡Usa los filtros para organizar tus materias!",
-          all: "Todas", title: "Portal de Estudios", closeHist: "[CERRAR]", histTitle: "📜 Registro Académico", delivered: "✅ Entregados", expired: "❌ Expirados", scheduleTitle: "📅 Horario de Clases", libTitle: "📚 Biblioteca", linkPdf: "+ Vincular PDF", taskTitle: "⏳ Nueva Tarea", saveTask: "Guardar", focusTitle: "🧠 Enfoque Profundo", openTimer: "Abrir Cronómetro", confirmDone: "¿Confirmar entrega?", confirmDel: "¿Realmente eliminar?", yes: "Sí", no: "No", remaining: "Restante", expiredTxt: "EXPIRADO", placeholderTask: "Título de la tarea...", termLabel: "Término Médico del Día", days: ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"], subjects: ["Anatomía", "Metodología", "Histología", "Comunicación", "Biología", "Sin clase"],
-          terms: [{w: "Homeostasis", d: "Equilibrio estable de las funciones del organismo."}, {w: "Iatrogenia", d: "Estado de enfermedad causado por tratamiento médico."}, {w: "Anamnesis", d: "Historial detallado del paciente recopilado en consulta."}] },
-    en: { mural: "Welcome to the Academic Portal. Use the filters to organize your subjects!",
-          all: "All", title: "Study Portal", closeHist: "[CLOSE]", histTitle: "📜 Academic Records", delivered: "✅ Delivered", expired: "❌ Expired", scheduleTitle: "📅 Class Schedule", libTitle: "📚 Library", linkPdf: "+ Link PDF", taskTitle: "⏳ New Task", saveTask: "Save", focusTitle: "🧠 Deep Focus", openTimer: "Open Timer", confirmDone: "Confirm delivery?", confirmDel: "Really delete?", yes: "Yes", no: "No", remaining: "Remaining", expiredTxt: "EXPIRED", placeholderTask: "Task title...", termLabel: "Medical Term of the Day", days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], subjects: ["Anatomy", "Methodology", "Histology", "Communication", "Biology", "No class"],
-          terms: [{w: "Homeostasis", d: "Stable equilibrium of organism functions."}, {w: "Iatrogenesis", d: "Disease state caused by medical treatment."}, {w: "Anamnesis", d: "Detailed patient history collected during consultation."}] }
+    pt: { 
+        mural: "Bem-vindo ao Portal Acadêmico. Utilize os filtros para organizar suas matérias!",
+        all: "Todas", title: "Portal de Estudos", closeHist: "[FECHAR]", histTitle: "📜 Registro Acadêmico", delivered: "✅ Entregues", expired: "❌ Expiradas", scheduleTitle: "📅 Cronograma de Aula", libTitle: "📚 Biblioteca", linkPdf: "+ Vincular PDF", taskTitle: "⏳ Nova Tarefa", saveTask: "Salvar", focusTitle: "🧠 Foco Profundo", openTimer: "Abrir Cronômetro", confirmDone: "Confirmar entrega?", confirmDel: "Realmente excluir?", yes: "Sim", no: "Não", remaining: "Restante", expiredTxt: "EXPIRADO", placeholderTask: "Título da tarefa...", termLabel: "Termo Médico do Dia", days: ["Segunda", "Terça", "Quarta", "Quinta", "Sexta"], subjects: ["Anatomia", "Metodologia", "Histologia", "Comunicação", "Biologia", "Sem aula"],
+        terms: [{w: "Homeostase", d: "Equilíbrio estável das funções do organismo."}, {w: "Iatrogenia", d: "Estado de doença causado por tratamento médico."}, {w: "Anamnese", d: "Histórico detalhado do paciente coletado na consulta."}] 
+    },
+    es: { 
+        mural: "¡Bienvenido al Portal Académico! ¡Usa los filtros para organizar tus materias!",
+        all: "Todas", title: "Portal de Estudios", closeHist: "[CERRAR]", histTitle: "📜 Registro Académico", delivered: "✅ Entregados", expired: "❌ Expirados", scheduleTitle: "📅 Horario de Clases", libTitle: "📚 Biblioteca", linkPdf: "+ Vincular PDF", taskTitle: "⏳ Nueva Tarea", saveTask: "Guardar", focusTitle: "🧠 Enfoque Profundo", openTimer: "Abrir Cronómetro", confirmDone: "¿Confirmar entrega?", confirmDel: "¿Realmente eliminar?", yes: "Sí", no: "No", remaining: "Restante", expiredTxt: "EXPIRADO", placeholderTask: "Título de la tarea...", termLabel: "Término Médico del Día", days: ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"], subjects: ["Anatomía", "Metodología", "Histología", "Comunicación", "Biología", "Sin clase"],
+        terms: [{w: "Homeostasis", d: "Equilibrio estable de las funciones del organismo."}, {w: "Iatrogenia", d: "Estado de enfermedad causado por tratamiento médico."}, {w: "Anamnesis", d: "Historial detallado del paciente recopilado en consulta."}] 
+    },
+    en: { 
+        mural: "Welcome to the Academic Portal. Use the filters to organize your subjects!",
+        all: "All", title: "Study Portal", closeHist: "[CLOSE]", histTitle: "📜 Academic Records", delivered: "✅ Delivered", expired: "❌ Expired", scheduleTitle: "📅 Class Schedule", libTitle: "📚 Library", linkPdf: "+ Link PDF", taskTitle: "⏳ New Task", saveTask: "Save", focusTitle: "🧠 Deep Focus", openTimer: "Open Timer", confirmDone: "Confirm delivery?", confirmDel: "Really delete?", yes: "Yes", no: "No", remaining: "Remaining", expiredTxt: "EXPIRED", placeholderTask: "Task title...", termLabel: "Medical Term of the Day", days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], subjects: ["Anatomy", "Methodology", "Histology", "Communication", "Biology", "No class"],
+        terms: [{w: "Homeostasis", d: "Stable equilibrium of organism functions."}, {w: "Iatrogenesis", d: "Disease state caused by medical treatment."}, {w: "Anamnesis", d: "Detailed patient history collected during consultation."}] 
+    }
 };
 
 let currentLang = localStorage.getItem('study_lang') || 'pt';
 let activeFilter = 'all';
 let db = JSON.parse(localStorage.getItem('study_vFinal_3')) || { tasks: [], files: [], history: [] };
 
-function setLang(lang) { currentLang = lang; localStorage.setItem('study_lang', lang); document.getElementById('lang-opts').style.display = 'none'; applyTranslations(); }
-function toggleLang() { const opts = document.getElementById('lang-opts'); opts.style.display = opts.style.display === 'block' ? 'none' : 'block'; }
+function setLang(lang) { 
+    currentLang = lang; 
+    localStorage.setItem('study_lang', lang); 
+    document.getElementById('lang-opts').style.display = 'none'; 
+    applyTranslations(); 
+}
+
+function toggleLang() { 
+    const opts = document.getElementById('lang-opts'); 
+    opts.style.display = opts.style.display === 'block' ? 'none' : 'block'; 
+}
 
 function applyTranslations() {
     const t = translations[currentLang];
@@ -53,20 +68,29 @@ function applyTranslations() {
     render();
 }
 
-function setFilter(f) { activeFilter = f; applyTranslations(); }
+function setFilter(f) { activeFilter = f; render(); applyTranslations(); }
 
 function addTask() {
     const sub = document.getElementById('task-sub').value;
     const name = document.getElementById('task-name').value;
     const date = document.getElementById('task-date').value;
-    if(!name || !date) return;
+    if(!name || !date) { alert("Preencha o nome e a data!"); return; }
     db.tasks.push({ sub, name, date, id: Date.now() });
     document.getElementById('task-name').value = "";
     save();
 }
 
-function addFile(input) { if (input.files[0]) { db.files.push({ name: input.files[0].name, link: URL.createObjectURL(input.files[0]) }); save(); } }
-function toggleHistory() { const m = document.getElementById('history-modal'); m.style.display = m.style.display === 'block' ? 'none' : 'block'; }
+function addFile(input) { 
+    if (input.files && input.files[0]) { 
+        db.files.push({ name: input.files[0].name, link: URL.createObjectURL(input.files[0]) }); 
+        save(); 
+    } 
+}
+
+function toggleHistory() { 
+    const m = document.getElementById('history-modal'); 
+    m.style.display = m.style.display === 'block' ? 'none' : 'block'; 
+}
 
 function showConfirm(text, onConfirm) {
     const overlay = document.getElementById('overlay');
@@ -87,7 +111,7 @@ function completeAction(id, type) {
     showConfirm(type === 'done' ? t.confirmDone : t.confirmDel, () => {
         if(type === 'done') {
             const task = db.tasks.find(i => i.id === id);
-            db.history.unshift({ ...task, status: 'Entregue', finishTime: new Date().toLocaleString() });
+            if(task) db.history.unshift({ ...task, status: 'Entregue', finishTime: new Date().toLocaleString() });
             confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 }, colors: ['#c68e5e', '#ffd700', '#ffffff'] });
         }
         db.tasks = db.tasks.filter(i => i.id !== id);
@@ -95,31 +119,42 @@ function completeAction(id, type) {
     });
 }
 
-function save() { localStorage.setItem('study_vFinal_3', JSON.stringify(db)); render(); }
+function save() { 
+    localStorage.setItem('study_vFinal_3', JSON.stringify(db)); 
+    render(); 
+}
 
 function render() {
     const now = new Date();
     const tLang = translations[currentLang];
-    const weeklyDone = db.history.filter(h => h.status === 'Entregue').length;
-    document.getElementById('weekly-progress-bar').style.width = Math.min((weeklyDone / 15) * 100, 100) + "%";
+    const pb = document.getElementById('weekly-progress-bar');
+    if(pb) {
+        const weeklyDone = db.history.filter(h => h.status === 'Entregue').length;
+        pb.style.width = Math.min((weeklyDone / 15) * 100, 100) + "%";
+    }
+
     const filteredTasks = activeFilter === 'all' ? db.tasks : db.tasks.filter(t => t.sub === activeFilter);
-    document.getElementById('tasks-list').innerHTML = filteredTasks.sort((a,b)=>new Date(a.date)-new Date(b.date)).map(t => {
-        const diff = new Date(t.date) - now;
-        const hours = diff / (1000 * 60 * 60);
-        let bCol = hours < 12 ? "var(--urgent)" : (hours < 24 ? "var(--warning)" : (hours < 72 ? "var(--accent)" : "var(--success)"));
-        if(diff < 0) {
-            db.history.unshift({ ...t, status: 'Expirada', originalDeadline: new Date(t.date).toLocaleString() });
-            db.tasks = db.tasks.filter(x => x.id !== t.id);
-            save();
-        }
-        return `<div class="list-item" style="border-left-color: ${bCol}">
-            <div class="task-header"><span class="subject-tag">${t.sub}</span>
-                <div class="action-icons"><span style="color:var(--success);cursor:pointer;margin-right:15px;" onclick="completeAction(${t.id}, 'done')">✓</span><span style="color:var(--urgent);cursor:pointer" onclick="completeAction(${t.id}, 'del')">✕</span></div>
-            </div>
-            <div style="font-weight:600">${t.name}</div>
-            <div style="font-size:0.7rem; color:var(--text-dim)">${tLang.remaining}: ${Math.floor(hours/24)}d ${Math.floor(hours%24)}h</div>
-        </div>`;
-    }).join('');
+    const list = document.getElementById('tasks-list');
+    if(list) {
+        list.innerHTML = filteredTasks.sort((a,b)=>new Date(a.date)-new Date(b.date)).map(t => {
+            const diff = new Date(t.date) - now;
+            const hours = diff / (1000 * 60 * 60);
+            let bCol = hours < 12 ? "var(--urgent)" : (hours < 24 ? "var(--warning)" : (hours < 72 ? "var(--accent)" : "var(--success)"));
+            if(diff < 0) {
+                db.history.unshift({ ...t, status: 'Expirada', originalDeadline: new Date(t.date).toLocaleString() });
+                db.tasks = db.tasks.filter(x => x.id !== t.id);
+                setTimeout(save, 100);
+            }
+            return `<div class="list-item" style="border-left-color: ${bCol}">
+                <div class="task-header"><span class="subject-tag">${t.sub}</span>
+                    <div class="action-icons"><span style="color:var(--success);cursor:pointer;margin-right:15px;" onclick="completeAction(${t.id}, 'done')">✓</span><span style="color:var(--urgent);cursor:pointer" onclick="completeAction(${t.id}, 'del')">✕</span></div>
+                </div>
+                <div style="font-weight:600">${t.name}</div>
+                <div style="font-size:0.7rem; color:var(--text-dim)">${tLang.remaining}: ${Math.floor(hours/24)}d ${Math.floor(hours%24)}h</div>
+            </div>`;
+        }).join('');
+    }
+    
     document.getElementById('hist-delivered').innerHTML = db.history.filter(h => h.status === 'Entregue').map(h => `<div style="font-size:0.75rem; margin-bottom:10px; border-bottom:1px solid #333; padding:5px;"><b>${h.sub}:</b> ${h.name}<br><small>${h.finishTime}</small></div>`).join('');
     document.getElementById('hist-expired').innerHTML = db.history.filter(h => h.status === 'Expirada').map(h => `<div style="font-size:0.75rem; margin-bottom:10px; border-bottom:1px solid #333; padding:5px;"><b style="color:var(--urgent)">${tLang.expiredTxt}:</b> ${h.name}<br><small>${h.originalDeadline}</small></div>`).join('');
     document.getElementById('files-list').innerHTML = db.files.map(f => `<div class="list-item"><a href="${f.link}" target="_blank" style="color:inherit;text-decoration:none">📄 ${f.name}</a></div>`).join('');
@@ -131,4 +166,5 @@ function openStudyTimer() {
     w.document.write(`<html><body style="background:#0f1113;color:#c68e5e;text-align:center;font-family:sans-serif;padding-top:50px;"><div id="t" style="font-size:4rem">00:00:00</div><script>let s=0;setInterval(()=>{s++;let h=Math.floor(s/3600),m=Math.floor((s%3600)/60),sec=s%60;document.getElementById('t').innerText=[h,m,sec].map(v=>v<10?"0"+v:v).join(":")},1000);<\/script></body></html>`);
 }
 
-applyTranslations();
+// Inicia as traduções ao carregar
+window.onload = applyTranslations;
